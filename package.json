@@ -1,0 +1,42 @@
+{
+	"name": "aoc-{year}",
+	"version": "1.0.0",
+	"description": "Collection of AOC {year} Solutions",
+	"main": "./build/src/runPuzzle.js",
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"launch": "tsc && node build/src/runPuzzle.js",
+		"eslint": "eslint .",
+		"eslint:fix": "eslint . --fix",
+		"prettier": "prettier --write .",
+		"prepare": "husky install",
+		"start": "./build/src/index.js",
+		"createday": "tsc && node build/src/createDay.js"
+	},
+	"author": {
+		"name": "Frederick Katsura",
+		"email": "fkatsura@katsurin.com"
+	},
+	"license": "MIT",
+	"lint-staged": {
+		"*.{js,json,jsx,ts,tsx}": [
+			"prettier --write",
+			"eslint --fix --quiet"
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^20.10.0",
+		"@typescript-eslint/eslint-plugin": "^6.12.0",
+		"@typescript-eslint/parser": "^6.12.0",
+		"eslint": "^8.54.0",
+		"eslint-plugin-prettier": "^5.0.1",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.1.0",
+		"prettier": "^3.1.0",
+		"typescript": "^5.3.2"
+	},
+	"dependencies": {
+		"axios": "^1.6.2"
+	}
+}
