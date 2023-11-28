@@ -1,4 +1,4 @@
 node_modules/
 build/
 inputs/
-api_key
+config.json

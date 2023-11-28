@@ -1,7 +1,7 @@
 {
-	"name": "aoc-{year}",
+	"name": "aoc-2023",
 	"version": "1.0.0",
-	"description": "Collection of AOC {year} Solutions",
+	"description": "Collection of AOC 2023 Solutions",
 	"main": "./build/src/runPuzzle.js",
 	"scripts": {
 		"build": "tsc",
