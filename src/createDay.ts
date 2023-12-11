@@ -40,7 +40,7 @@ async function retrieveDayInfo(day: number): Promise<boolean> {
 		.replace("<h2>---", `<h2><a href="https://adventofcode.com/${config.year}/day/${day}">`)
 		.replace("---</h2>", "</a></h2>")
 		.replace("<article", "<div")
-		.replace("article>", "div>\n");
+		.replace("article>", "div>\n\n");
 
 	let secondHalf = "";
 
@@ -73,7 +73,7 @@ async function retrieveDayInfo(day: number): Promise<boolean> {
 		mkdirSync("./inputs");
 	}
 
-	writeToFile(`./inputs/Day${day}.txt`, data);
+	writeToFile(`./inputs/Day${day}.txt`, data.trim());
 	return true;
 }
 
